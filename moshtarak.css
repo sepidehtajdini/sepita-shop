@@ -1,0 +1,232 @@
+body {
+  background-color: #00cccd;
+  font-family: "Shabnam";
+  background-image: url("images/tooth-wall.jpg");
+}
+#autoclave,
+#radiography,
+#unit,
+#unit2 {
+  text-align: center;
+}
+.dropdown-item:hover {
+  border: 2px solid teal;
+  color: white;
+  background-color: #00b3b3;
+}
+.nav-item .nav-link {
+  color: white;
+}
+.nav-item .nav-link:hover {
+  color: teal;
+}
+.top {
+  padding: 11px;
+  color: #fff;
+  background-color: rgba(128, 128, 128, 0.445);
+  margin-right: 50px;
+  bottom: 0;
+  background-size: 35px;
+  background-position: center;
+  border-radius: 5px;
+  border: 2px ridge #676767;
+  background-image: url("../fontawesome/svgs/solid/arrow-up.svg");
+  display: inline;
+  position: sticky;
+}
+.container-fluid {
+  border: 2px solid teal;
+  background-color: #8d8d8d;
+}
+.container-fluid .form-switch .form-check-input:focus {
+  box-shadow: 0 0 3px 2px #00b3b3;
+}
+body.dark-mode {
+  background-image: url("images/dark-wal.jpg");
+}
+body.dark-mode h1 {
+  color: #00b3b3;
+}
+body.dark-mode h1,
+body.dark-mode h2 {
+  text-shadow: 2px 2px 1px black;
+}
+body.dark-mode p {
+  text-shadow: 2px 2px 5px black;
+}
+body.dark-mode .main,
+body.dark-mode .matn {
+  color: lightgray;
+  background-image: linear-gradient(to right, #003e3e, #00999a);
+}
+body.dark-mode .one {
+  background-color: #003334;
+}
+body.dark-mode .container-fluid {
+  background-color: #676767;
+  border: 2px solid #4d4d4d;
+}
+body.dark-mode .container-fluid .form-switch .form-check-input {
+  background-color: teal;
+  border-color: #004d4d;
+}
+body.dark-mode .container-fluid .form-switch .form-check-input:focus {
+  box-shadow: 0 0 3px 2px #00b3b3;
+}
+body.dark-mode .dropdown-menu {
+  background-color: #676767;
+}
+body.dark-mode .dropdown-menu .dropdown-item {
+  color: black;
+}
+body.dark-mode .dropdown-menu .disabled {
+  color: gray;
+}
+body.dark-mode .search {
+  color: black;
+  background-color: #4d4d4d;
+}
+body.dark-mode .search:hover {
+  background-color: gray;
+}
+body.dark-mode .bg-teal .nav-link,
+body.dark-mode .nav-item .nav-link {
+  color: black;
+}
+body.dark-mode footer {
+  background-color: #4d4d4d;
+}
+.bg-teal {
+  border: 2px solid teal;
+  background-color: teal;
+  border: 0;
+  outline: 0;
+}
+.bg-teal:hover {
+  background-color: aquamarine;
+  font-weight: bold;
+}
+.bg-teal:active {
+  background-color: #00b3b3;
+  color: teal;
+}
+.bg-teal:focus {
+  border: 2px solid teal;
+  box-shadow: 0 0 0 4px #00b3b3;
+}
+li {
+  list-style: none;
+}
+.card,
+table {
+  text-align: center;
+  margin: auto;
+}
+.row .card {
+  color: black;
+}
+.row .card:hover {
+  border: 2px solid teal;
+}
+.row .card:hover li:hover {
+  margin-right: 20px;
+  font-weight: bold;
+}
+.row li:hover {
+  margin-right: 20px;
+  font-weight: bold;
+}
+.search {
+  background-color: teal;
+  border: 1px solid white;
+}
+.search:hover {
+  background-color: #00b3b3;
+}
+h1:hover,
+h2:hover {
+  color: red;
+}
+.one {
+  background-color: teal;
+  border-radius: 3%;
+  margin: auto;
+}
+.main {
+  margin: auto;
+  border: 5px dashed darkcyan;
+  background-color: white;
+  padding: 50px;
+}
+h2,
+h1 {
+  text-shadow: 2px 2px 1px white;
+  font-weight: bold;
+}
+h1,
+h5 {
+  color: black;
+  text-align: center;
+}
+.nav-tabs .nav-item {
+  background-color: #00b3b3;
+}
+.nav-tabs .nav-item .nav-link {
+  color: black;
+}
+footer {
+  background-color: gray;
+  font-style: italic;
+  box-shadow: 0 0 5px 2px #676767;
+  border: 2px solid #676767;
+  border-radius: 0 30% 0 30%;
+}
+h6 {
+  background-color: #00b3b3;
+}
+img:hover {
+  cursor: pointer;
+}
+#cavitron,
+#distilled,
+#unit,
+#unit2,
+#pack,
+#apex-locator,
+#camera,
+#loop,
+#radiography,
+#autoclave {
+  background-color: teal;
+  border-radius: 10%;
+}
+#cavitron:hover,
+#distilled:hover,
+#unit:hover,
+#unit2:hover,
+#pack:hover,
+#apex-locator:hover,
+#camera:hover,
+#loop:hover,
+#radiography:hover,
+#autoclave:hover {
+  background-color: #00b3b3;
+}
+.cart {
+  margin-top: 7px;
+  border: 0;
+}
+@media screen and (max-width: 560px) {
+  p,
+  h5 {
+    font-size: smaller;
+  }
+}
+@media screen and (max-width: 400px) {
+  .card-title {
+    font-size: 7px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+}

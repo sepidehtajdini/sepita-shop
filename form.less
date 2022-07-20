@@ -1,0 +1,9 @@
+@import "../variables.less";
+body{font-family: "Shabnam",serif;}
+.registration{background-color:lighten(@color,60%); padding:15px;margin:auto; margin-top:20px;border-radius:4%;
+    border:2px solid @light-color;}
+input{.base();border-radius:5px;}
+
+body.dark-mode{.registration{background-color:lighten(@color,10%);
+    div{input{background-color:@color;}}}
+}
