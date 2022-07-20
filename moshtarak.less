@@ -1,0 +1,72 @@
+@import "./variables.less";
+body{background-color:lighten(@color, 15%);font-family:"Shabnam";
+    background-image: url("./images/tooth-wall.jpg");}
+#autoclave,#radiography,#unit,#unit2{.center();}
+.dropdown-item{
+    &:hover{.base();color:white; background-color: @light-color;}}
+.nav-item{
+    .nav-link{color:white;
+        &:hover{color:@color;}}}
+.top{padding:11px;color: #fff;background-color: rgba(128, 128, 128, 0.445);margin-right:50px;bottom:0;
+    background-size:35px;background-position:center; border-radius:5px; border:2px ridge @dark-gray;
+    background-image: url("../fontawesome/svgs/solid/arrow-up.svg");display:inline;position:sticky;}
+
+.container-fluid{.base();background-color:lighten(gray,5%);
+    .form-switch{
+        .form-check-input{&:focus{box-shadow: 0 0 3px 2px @light-color;}}}}
+body.dark-mode{background-image: url("./images/dark-wal.jpg");
+            h1{color:@light-color}
+            h1,h2{text-shadow:2px 2px 1px black;}
+            p{text-shadow: 2px 2px 5px black;}
+           .main,.matn{color: lightgray;background-image:linear-gradient(to right,darken(@color,13%),lighten(@color,5%))}
+           .one{background-color:darken(@color,15%);}
+           .container-fluid{background-color:@dark-gray; border:2px solid @too-dark;
+                    .form-switch{
+                        .form-check-input{background-color:@color;border-color:@dark-color;
+                        &:focus{box-shadow: 0 0 3px 2px @light-color;}}}}
+                       .dropdown-menu{background-color:@dark-gray;
+                       .dropdown-item{.black();}
+                       .disabled{color: gray;}}
+                       .search{.black();background-color:@too-dark;
+                       &:hover{background-color:gray;}}
+                      .bg-teal,.nav-item{.nav-link{.black();}}
+         footer{background-color:@too-dark;}
+}
+.bg-teal{.base();background-color:@color;border:0;outline:0;
+    &:hover{background-color:aquamarine;font-weight: bold;}
+    &:active{background-color: @light-color;color:@color;}
+    &:focus{.base();
+        box-shadow:0 0 0 4px @light-color;}}
+li{list-style: none;}
+.card,table{.center();margin: auto;}
+.row{.card{.black();
+    &:hover{.base();
+            li{&:hover{margin-right:20px;font-weight: bold;}}}}
+    li{&:hover{margin-right:20px;font-weight: bold;}}
+    }
+.search{background-color:@color; border:1px solid white;
+    &:hover{background-color:@light-color;}}
+h1:hover,h2:hover{color:red;}
+.one{background-color: @color;border-radius:3%;margin:auto;}
+.main{margin:auto;border:5px dashed darkcyan;background-color: white;padding:50px;}
+h2,h1{text-shadow:2px 2px 1px white;font-weight: bold;}
+h1,h5{.black();.center();}
+.nav-tabs{.nav-item{background-color:@light-color;
+        .nav-link{.black();}}}
+footer{background-color:gray;font-style: italic;box-shadow:0 0 5px 2px @dark-gray;border:2px solid @dark-gray;
+    border-radius: 0 30% 0 30%;}
+h6{background-color:@light-color}
+img{&:hover{cursor: pointer;}}
+#cavitron,#distilled,#unit,#unit2,#pack,#apex-locator,#camera,#loop,#radiography,#autoclave{
+    background-color: @color; border-radius: 10%;
+    &:hover{background-color: @light-color;}}
+.cart{margin-top:7px;border:0;}
+
+
+@media screen and (max-width:560px){
+p,h5{font-size:smaller;};
+}
+@media screen and (max-width:400px){
+    .card-title{font-size:7px;};
+    h1{font-size:20px}
+}

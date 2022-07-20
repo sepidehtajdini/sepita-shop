@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+  <link rel="favicon" type="icon" href="../favicon/favicon.ico">
+  <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../iziToast/iziToast.min.css">
+  <link rel="stylesheet" href="../../fonts/fonts.css">
+  <link rel="stylesheet" href="./moshtarak.css">
+  <meta name="keywords"
+    content="دندانپزشکی،تجهیزات دندانپزشکی،تجهیزات،فروشگاه،فروشگاه لوازم دندانپزشکی،اتوکلاو،رادیوگرافی،لوپ،آب مقطرساز،یونیت">
+  <meta name="description" content="فروشگاه معتبر انواع تجهیزات دندانپزشکی در ایران">
+  <title>سپیتا | فروشگاه</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top text-bg-secondary">
+    <div class="container-fluid ">
+      <a class="navbar-brand" href="#">
+        <img src="../favicon/favicon.ico" alt="an image of my logo" width="30" height="30"
+          class="d-inline-block align-text-top"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-5 mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle btn" href="#" id="navbardropdown1" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">ورود/عضویت</a>
+            <ul class="dropdown-menu" aria-labelledby="navbardropdown1">
+              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#login">
+                  ورود اعضا</a></li>
+              <li><a class="dropdown-item" href="../project.details/form/registration.html" target="_blank">عضویت</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn" aria-current="page" href="./instruments.html">اینسترومنت‌ها</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle btn" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">دستگاه‌ها</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="./autoclave.html">اتوکلاو</a></li>
+
+              <li><a class="dropdown-item" href="./radiography.html">رادیوگرافی</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item disabled" href="#">موتور جراحی ایمپلنت</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="./unit.html">یونیت</a></li>
+              <li><a class="dropdown-item disabled" href="#">کمپرسور</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn" aria-current="page" href="./users.html">شرکای خارجی</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn" aria-current="page" href="#">فروشگاه</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn" href="./aboutus.html">درباره‌ ما</a>
+          </li>
+
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-5 mx-2" type="search" placeholder="جستجو کنید" aria-label="Search">
+          <button class="btn search" type="submit">جستجو</button>
+        </form>
+        <ul>
+          <li class="nav-item">
+            <a class="nav-link btn cart position-relative" data-bs-toggle="modal" data-bs-target="#cart"><img
+                src="../fontawesome/svgs/solid/shopping-cart.svg" alt="an image of shopping cart" width="30"
+                data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="custom-tooltip"
+                title="سبد خرید"><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0<span class="visually-hidden">cart items</span></span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input" name="dark-light" type="checkbox" onclick="toggleDarkLight()" role="switch"
+          id="flexSwitchCheckDefault">
+        <label class="form-check-label" for="flexSwitchCheckDefault">حالت شب</label>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link" href="../index.html">صفحه اصلی</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">فروشگاه</a>
+      </li>
+    </ul>
+    <div class="one row">
+      <div class="main col-11 row">
+        <div class="card col-xs-12 col-md-7">
+          <img src="./images/abmoghatar saz.jpg" class="card-img-top" height="300"
+            alt="an image of dental distilled water maker device" data-bs-toggle="tooltip" data-bs-placement="bottom"
+            data-bs-custom-class="custom-tooltip" title="آب مقطرساز">
+          <div class="card-body">
+            <h5 class="card-title distilled-product">دستگاه آب مقطرساز</h5>
+            <p class="card-text distilled-price">۱۲.۴۰۰.۰۰۰ تومان</p>
+            <button class="btn bg-teal add-distilled">خرید</button>
+            <br><br>
+            <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#distilled"
+              aria-expanded="false"> توضیحات بیشتر</button>
+            <div class="collapse p-3 border border-1" id="distilled">
+              <ul>
+                <li>ساخت چین</li>
+                <li>جنس مخزن استیل ضد زنگ</li>
+                <li>نوع کارکرد: تقطیر</li>
+                <li>حجم مخزن ۴ لیتر</li>
+                <li>توان تولید:یک لیتر در ساعت</li>
+                <li>وزن ۳.۵ کیلوگرم</li>
+                <li>ابعادی برابر با قطر ۲۹۰ و ارتفاع ۳۹۰ میلی‌متر</li>
+                <li>دارای استاندارد های جهانی ISO و CE اروپا</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card col-xs-12 col-md-7">
+          <img src="./images/apex-locator.jpeg" class="card-img-top" height="300" alt="an image of dental apex locator"
+            data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip"
+            title=" اپکس لوکیتور">
+          <div class="card-body">
+            <h5 class="card-title apex-product">دستگاه اپکس لوکیتور</h5>
+            <p class="card-text apex-price">۵.۶۸۷.۰۰۰ تومان</p>
+            <button class="btn bg-teal add-apex">خرید</button>
+            <br><br>
+            <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#apex-locator"
+              aria-expanded="false"> توضیحات بیشتر</button>
+            <div class="collapse p-3 border border-1" id="apex-locator">
+              <ul>
+                <li>ساخت کمپانی وودپیکر چین</li>
+                <li>فناوری جدید، دقت بیشتر، ضد تداخل</li>
+                <li>قابلیت اتصال به روتاری</li>
+                <li>دارای دقت زیاد</li>
+                <li>دارای فناوری جدید</li>
+                <li>دارای هشدار صوتی</li>
+                <li>دارای نمایشگر ۴.۵ اینچ رنگی</li>
+                <li>قابلیت اتصال به روتاری</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="card col-xs-12 col-md-7">
+          <img src="./images/woodpecker cavitron.jpg" class="card-img-top" height="300"
+            alt="an image of dental cavitron" data-bs-toggle="tooltip" data-bs-placement="bottom"
+            data-bs-custom-class="custom-tooltip" title="جرم‌گیر">
+          <div class="card-body">
+            <h5 class="card-title cavitron-product">دستگاه جرم‌گیری وودپکر</h5>
+            <p class="card-text cavitron-price">۵.۶۵۰.۰۰۰ تومان</p>
+            <button class="btn bg-teal add-cavitron">خرید</button>
+            <br><br>
+            <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#cavitron"
+              aria-expanded="false"> توضیحات بیشتر</button>
+            <div class="collapse p-3 border border-1" id="cavitron">
+              <ul>
+                <li>ساخت چین</li>
+                <li>پرتابل</li>
+                <li>نوع کارکرد: تقطیر</li>
+                <li>دارای پدال</li>
+                <li>هندپیس غیر نوری</li>
+                <li>فرکانس ارتعاش ۳-۳۰ کیلو هرتز</li>
+                <li>دارای ۵ عدد سر قلم</li>
+                <li>دارای هندپیس قابل جدا شدن و قابل اتوکلاو</li>
+                <li>دارای کالیبراسیون خودکار فرکانس</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card col-xs-12 col-md-7">
+          <img src="./images/loop.jpg" class="card-img-top" height="300" alt="an image of dental loop device"
+            data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" title="لوپ">
+          <div class="card-body">
+            <h5 class="card-title loop-product">لوپ دندانپزشکی</h5>
+            <p class="card-text loop-price">۱۱.۵۰۰.۰۰۰ تومان</p>
+            <button class="btn bg-teal add-loop">خرید</button>
+            <br><br>
+            <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#loop"
+              aria-expanded="false"> توضیحات بیشتر</button>
+            <div class="collapse p-3 border border-1" id="loop">
+              <ul>
+                <li>قدرت بزرگ نمایی ۳.۵</li>
+                <li>دارای قابلیت تنظیم عدسی نسبت به فاصله مردمک دو چشم</li>
+                <li>بسیار سبک</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card col-xs-12 col-md-7">
+          <img src="./images/packing device.jpg" class="card-img-top" height="300"
+            alt="an image of dental packing device" data-bs-toggle="tooltip" data-bs-placement="bottom"
+            data-bs-custom-class="custom-tooltip" title="دستگاه پک">
+          <div class="card-body">
+            <h5 class="card-title pack-product">دستگاه پک</h5>
+            <p class="card-text pack-price">۱۹.۴۵۰.۰۰۰ تومان</p>
+            <button class="btn bg-teal add-pack">خرید</button>
+            <br><br>
+            <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#pack"
+              aria-expanded="false"> توضیحات بیشتر</button>
+            <div class="collapse p-3 border border-1" id="pack">
+              <ul>
+                <li>تیغه دو طرفه</li>
+                <li>دارای آلارم های دیداری و شنیداری</li>
+                <li>قابلیت استفاده از انواع رول های ایرانی و خارجی</li>
+                <li>ظاهر زیبا</li>
+                <li>بادوام و قابل اعتماد</li>
+                <li>تولید کمپانی وسون</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card col-xs-12 col-md-7">
+          <img src="./images/UNIT-PARS-DENTAL.jpg" class="card-img-top" height="300" alt="an image of dental unit"
+            data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" title="یونیت">
+          <div class="card-body">
+            <h5 class="card-title unit-product">یونیت پارس‌دنتال</h5>
+            <p class="card-text unit-price">۱۰۳.۵۵۰.۰۰۰ تومان</p>
+            <button class="btn bg-teal add-unit">خرید</button>
+            <br><br>
+            <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#unit"
+              aria-expanded="false"> توضیحات بیشتر</button>
+            <div class="collapse p-3 border border-1" id="unit">
+              <ul>
+                <li>تابلت پنومات ۵ شلنگه</li>
+                <li>دارای ۴ حافظه صندلی قابل تعریف</li>
+                <li>تکیه‌گاه ارگونومیک و بسیار راحت برای بیمار</li>
+                <li>پشت سری ۳ حالته</li>
+                <li>پدال مولتی فانکشن ۷ کاره</li>
+                <li>ساکشن آبی و جراحی</li>
+                <li>تابوره</li>
+                <li>چراغ طرح فارو ایتالیا</li>
+                <li>مخزن آب اضطراری ۱.۵ لیتری</li>
+                <li>دارای کاسه کراشوار سرامیکی با قابلیت چرخش ۱۲۰ درجه ای</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card col-xs-12 col-md-7">
+          <img src="./images/autoclave.jpg" class="card-img-top" height="300" alt="an image of dental autoclave"
+            data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" title="اتوکلاو">
+          <div class="card-body">
+            <h5 class="card-title autoclave-product">FTZ اتوکلاو</h5>
+            <p class="card-text autoclave-price">۶۵.۹۰۰.۰۰۰۰ تومان</p>
+            <button class="btn bg-teal add-autoclave">خرید</button>
+            <br><br>
+            <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#autoclave"
+              aria-expanded="false"> توضیحات بیشتر</button>
+            <div class="collapse p-3 border border-1" id="autoclave">
+              <ul>
+                <li>دارای ۶ برنامه پیش فرض</li>
+                <li>قابلیت برنامه دهی توسط کاربر</li>
+                <li>دارای دو دمای کاری ۱۲۱ و ۱۳۴ درجه</li>
+                <li>دارای سیکل Prion جهت ویروس‌های خطرناک</li>
+                <li>قابلیت وکیوم کردن تا ۱۰ مرتبه در یک سیکل</li>
+                <li>دارای سیستم خشک‌ کن</li>
+                <li>دارای تست میکروبی HELIX، B&D</li>
+                <li>دارای پورت USB</li>
+                <li>مجهز به پرینتر</li>
+                <li>مجهز به نمایشگر LCD جهت نمایش عملکرد دستگاه</li>
+                <li>مجهز به فیلتر آنتی باکتریال</li>
+                <li>قابلیت کنترل همزمان دما و فشار</li>
+                <li>مجهز به دو مخزن آب تمیز و کثیف از جنس استیل</li>
+                <li>مجهز به سیستم تست پمپ وکیوم</li>
+                <li>مجهز به سیستم تست قطعات و عیب‌یابی</li>
+                <li>چمبر یکپارچه از نوع StainlessSteel</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card col-xs-12 col-md-7">
+          <img src="./images/de-gotzen.jpg" class="card-img-top" alt="an image of dental radiography" height="300"
+            data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip"
+            title="رادیوگرافی">
+          <div class="card-body">
+            <h5 class="card-title radiography-product">رادیوگرافی</h5>
+            <p class="card-text radiography-price">۱۵۰.۰۰۰.۰۰۰ تومان</p>
+            <button class="btn bg-teal add-radiography">خرید</button>
+            <br><br>
+            <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#radiography"
+              aria-expanded="false">توضیحات بیشتر</button>
+            <div class="collapse p-3 col-12" id="radiography">
+              <ul>
+                <li>قابلیت اتصال دو تیوب بصورت همزمان</li>
+                <li>ولتاژ تیوب ۷۰ کیلوولت</li>
+                <li>جریان تیوب ۸ میلی آمپر</li>
+                <li>بازوی ۳ شکن اورجینال با انعطاف پذیری بالا</li>
+                <li>فوکال اسپات ۰.۷ میلی متر</li>
+                <li>قابلیت تنطیم زمان اکسپوز از ۰.۰۸ تا ۳.۲ ثانیه</li>
+                <li> تایمر دیجیتال با سیستم میکروپروسسوری پیشرفته</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="card col-xs-12 col-md-7">
+          <img src="./images/camera-with monitor.jpg" class="card-img-top" height="300" alt="an image of dental camera"
+            data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip"
+            title="دوربین داخل دهانی">
+          <div class="card-body">
+            <h5 class="card-title camera-product">دوربین داخل دهانی و مانیتور</h5>
+            <p class="card-text camera-price">۱۱.۵۰۰.۰۰۰ تومان</p>
+            <button class="btn bg-teal add-camera">خرید</button>
+            <br><br>
+            <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#camera"
+              aria-expanded="false"> توضیحات بیشتر</button>
+            <div class="collapse p-3 border border-1" id="camera">
+              <ul>
+                <li>ساخت کشور چین</li>
+                <li>ضد آب</li>
+                <li>دارای کیفیت فول HD</li>
+                <li>طراحی بسیار سبک و ارگونومیک</li>
+                <li>دارای قابلیت تغییر رزولوشن</li>
+                <li>دارای دوربین بی‌سیم</li>
+                <li>دارای ۸ عدد لامپ LED</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="login" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close end" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                <div class="mb-3">
+                  <label for="username" class="form-label">نام کاربری</label>
+                  <input type="text" class="form-control" id="username" placeholder="لطفاً نام کاربری را وارد کنید">
+                </div>
+                <div class="mb-3">
+                  <label for="password" class="form-label">گذرواژه</label>
+                  <input type="password" class="form-control" id="password" placeholder="لطفاً گذرواژه را وارد کنید">
+                </div>
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn bg-teal vorood">ورود</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="cart" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close end" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h4 class="modal-title">سبد خرید</h4>
+              </div>
+              <div class="modal-body row">
+                <table class="col-12 col-lg-7">
+                  <thead>
+                    <tr>
+                      <th>شماره</th>
+                      <th>نام کالا</th>
+                      <th>قیمت</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+                </table>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn bg-teal">پرداخت</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <span class="mb-3 mb-md-0 text-muted">&copy; تمامی حقوق متعلق به سایت سپیتا می‌باشد</span>
+    </div>
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/3ptaj/"><img width="30" height="24"
+            src=".././fontawesome/svgs/brands/instagram.svg" alt="instagram icon"></a></li>
+      <li class="ms-3"><a class="text-muted" href="https://t.me/Sepiiita"><img width="30" height="24"
+            src=".././fontawesome/svgs/brands/telegram.svg" alt="telegram icon"></a></li>
+      <li class="ms-3"><a class="text-muted" href="https://www.github.com/sepidehtajdini"><img width="30" height="24"
+            src=".././fontawesome/svgs/brands/github.svg" alt="github icon"></a></li>
+    </ul>
+  </footer>
+  <script src="../bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="../iziToast/iziToast.min.js"></script>
+  <script src="../project.js"></script>
+  <script src="./shop.js"></script>
+  <script src="./form/login.js"></script>
+</body>
+
+</html>
